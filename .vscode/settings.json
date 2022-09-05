@@ -1,0 +1,97 @@
+{
+  // editor
+  "editor.fontSize": 20,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Fira Code, Operator Mono",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  // cursor
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorBlinking": "expand",
+  // config related to code formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": true,
+    "source.organizeImports": true
+  },
+
+  "eslint.alwaysShowStatus": true,
+  //terminal
+  "terminal.integrated.fontSize": 20,
+  "terminal.integrated.letterSpacing": 0,
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+  "workbench.colorTheme": "Learn with Sumit - Peace of the eye - Dracula version",
+  "workbench.iconTheme": "material-icon-theme",
+  // terminal customization // Joss Color "#ff009d !
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#111",
+    "minimap.background": "#111",
+    "editor.background": "#111", // ("editor.background") Is this Main Editor BAcground where I Write !
+    "sideBar.background": "#111",
+    "sideBarSectionHeader.background": "#111",
+    "sideBarSectionHeader.border": "#111",
+    "sideBarSectionHeader.foreground": "#00ff2a",
+    "sideBar.border": "#111",
+    "tab.inactiveForeground": "#fffb00",
+    "tab.activeForeground": "#00ff11",
+    "tab.activeBorder": "#51ff",
+    "tab.border": "#111",
+    "tab.activeBorderTop": "#111",
+    "activityBar.background": "#111",
+    "activityBar.dropBorder": "#111",
+    "activityBar.border": "#111",
+    "window.activeBorder": "#111",
+    "activityBarBadge.foreground": "#ffffff", // "activityBarBadge.foreground" is this files logo shoing unsave statusbar  text color!
+    "activityBar.inactiveForeground": "#007244", // "activityBar.inactiveForeground" is my sidebar showing logo color!
+    "activityBar.activeBorder": "#00ff2f",
+    "activityBar.foreground": "#00ff2f",
+    "activityBarBadge.background": "#51ff", // "activityBarBadge.background" is this files logo shoing unsave statusbar background color!
+    "editorGutter.background": "#111",
+    "statusBar.background": "#111",
+    "editor.selectionBackground": "#333",
+    "editor.lineHighlightBackground": "#111",
+    "statusBarItem.hoverBackground": "#6363633a",
+    "list.activeSelectionBackground": "#0004ffad",
+    "editorGroupHeader.tabsBackground": "#111",
+    "tab.activeBackground": "#111",
+    "button.background": "#2b2b2b",
+    "tab.inactiveBackground": "#111",
+    "terminal.background": "#111",
+    "problemsWarningIcon.foreground": "#ff0000",
+    "terminal.border": "#2c2c54",
+    "scrollbarSlider.background": "#00f7ff",
+    "scrollbarSlider.hoverBackground": "#00f7ff",
+    "scrollbar.shadow": "#111",
+    "scrollbarSlider.activeBackground": "#ffff4d",
+    "editorCursor.background": "#ffff4d",
+    "editorCursor.foreground": "#ffff4d",
+    "bookmarks.lineBorder": "#2f2f2f",
+    "selection.background": "#222",
+    "editor.selectionHighlightBackground": "#222",
+    "editorSuggestWidget.background": "#111",
+    "editor.findMatchHighlightBackground": "#222"
+  },
+  "git.ignoreLimitWarning": true
+}

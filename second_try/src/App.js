@@ -1,14 +1,6 @@
 import React from "react";
 import "./App.css";
 import logo from "./logo.svg";
-import Form from "./components/Form";
-import Clock from "./components/Clock";
-import Togle from "./components/toggle";
-import Simple from "./components/simple";
-import ClockDual from "./components/clockdual";
-import ClockList from "./components/ClockList";
-import ClockInlineConditions from "./components/ClockInlineConditions";
-// import Eventlistener from "./components/reactEventlistener";
 
 function App() {
   const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -28,14 +20,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <Simple />
-      <Togle />
-      {/* <Eventlistener /> */}
-      <Clock />
-      <ClockDual />
-      <ClockInlineConditions />
-      <ClockList quantities={array} />
-      <Form />
     </div>
   );
 }

@@ -1,10 +1,20 @@
 import React from "react";
 import "./style.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   solid,
+//   regular,
+//   brands,
+//   icon,
+// } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-export default class Popup extends React.Component {
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCoffee } from "@fortawesome/fontawesome-free-solid";
+
+class Popup extends React.Component {
   render() {
     return (
-      <div className="popup active">
+      <div className="popup">
         <div className="container">
           <div className="heading">
             <h1 className="serial-no">01</h1>
@@ -12,6 +22,7 @@ export default class Popup extends React.Component {
           </div>
           <div className="settings">
             <i className="fas fa-copy copy-btn"></i>
+            {/* <FontAwesomeIcon icon={regular("coffee")} /> */}
             <i className="fas fa-arrows-up-to-line show-btn"></i>
           </div>
         </div>
@@ -27,10 +38,10 @@ export default class Popup extends React.Component {
           </div>
           <div className="connections">
             <div className="contact">
-              <a href="#"> Contact Me</a>
+              <a href="/"> Contact Me</a>
             </div>
             <div className="connect">
-              <a href="#">Connect Me</a>
+              <a href="/">Connect Me</a>
             </div>
           </div>
           <div className="serial-num">
@@ -41,3 +52,4 @@ export default class Popup extends React.Component {
     );
   }
 }
+export default Popup;

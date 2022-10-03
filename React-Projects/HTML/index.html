@@ -1,0 +1,145 @@
+<!--
+        <div class="container">
+      <h1>Freequently Asked Question</h1>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc1" />
+        <label for="acc1">
+          <h2>01</h2>
+          <h3>How do I Apply?</h3>
+        </label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+            officiis? Dolore dolorem vitae assumenda temporibus. Ut corrupti
+            porro doloremque eius.
+          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc2" />
+        <label for="acc2">
+          <h2>02</h2>
+          <h3>Lost or Forgotten your password!</h3>
+        </label>
+        <div class="content">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus
+            nihil consequatur eum, aperiam labore quis magni velit, facere odio
+            veritatis quibusdam natus doloremque nostrum fugit quod! Deleniti
+            vero doloribus magni consequuntur corporis explicabo nobis
+            reiciendis dolorum cum tenetur suscipit ipsam repellendus, quia
+            culpa aliquid delectus veniam placeat libero ut aliquam!
+          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc3" />
+        <label for="acc3">
+          <h2>03</h2>
+          <h3>Unfortunately, Lorem is no more die?</h3>
+        </label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+            rerum nisi alias amet, repellendus accusantium aliquid ex veniam
+            quaerat, recusandae quibusdam molestiae adipisci, facere unde!
+          </p>
+        </div>
+      </div>
+      <div class="tab">
+        <input type="radio" name="acc" id="acc4" />
+        <label for="acc4">
+          <h2>04</h2>
+          <h3>How can IHelped You?</h3>
+        </label>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+            numquam consequatur consequuntur animi veritatis dolor pariatur
+            rerum deleniti sint, amet, voluptatem adipisci!
+          </p>
+        </div>
+      </div>
+    </div> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Css FAQs</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="popup active">
+      <div class="container">
+        <div class="heading">
+          <h1 class="serial-no">01</h1>
+          <h2 class="question">About me Who I am ?</h2>
+        </div>
+        <div class="settings">
+          <i class="fas fa-copy copy-btn"></i>
+          <i class="fas fa-arrows-up-to-line show-btn"></i>
+        </div>
+      </div>
+      <div class="content">
+        <div class="peragraph">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, ullam.
+          Sunt dolor voluptate eius? Ad, quos, labore cumque tempora dignissimos
+          aspernatur quam veritatis eos odit saepe eius molestias recusandae
+          praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Magnam eveniet provident, delectus optio facilis in quasi tenetur
+          maiores laborum deleniti nobis iure magni id corporis animi
+          exercitationem nesciunt adipisci at.
+        </div>
+        <div class="connections">
+          <div class="contact"><a href="#"> Contact Me</a></div>
+          <div class="connect"><a href="#">Connect Me</a></div>
+        </div>
+        <div class="serial-num"><h1>01</h1></div>
+      </div>
+    </div>
+    <button style="margin-top: 20px" id="theme">Change</button>
+    <script type="text/javascript">
+      document.querySelector(".show-btn").addEventListener("click", () => {
+        document.querySelector(".popup").classList.toggle("active");
+      });
+
+      document.querySelector("#theme").addEventListener("click", () => {
+        document.body.classList.toggle("darkTheme");
+      });
+
+      const c = document.querySelector(".peragraph");
+      const x = document.querySelector(".copy-btn");
+      x.addEventListener("click", function () {
+        const crel = document.createElement("textarea");
+        document.body.appendChild(crel);
+        crel.innerHTML = c.innerHTML;
+        crel.select();
+        navigator.clipboard.writeText(crel.value);
+        crel.style.display = "none";
+        alert("Copy Done!");
+      });
+    </script>
+    <!-- Ion Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Font Awosome Kit -->
+    <script
+      src="https://kit.fontawesome.com/625708b356.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Box icon -->
+  </body>
+</html>

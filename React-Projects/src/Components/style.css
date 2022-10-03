@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Annie+Use+Your+Telescope&family=Bebas+Neue&family=Blaka&family=Blaka+Hollow&family=Bungee&family=Codystar:wght@300&family=Dancing+Script&family=Diplomata+SC&family=Dynalight&family=Eater&family=Fascinate&family=Faster+One&family=Frijole&family=IBM+Plex+Mono:wght@100;200;300;700&family=IM+Fell+English+SC&family=Irish+Grover&family=Julius+Sans+One&family=Kdam+Thmor+Pro&family=League+Gothic&family=Macondo&family=Monofett&family=Monoton&family=Mr+Dafoe&family=Notable&family=Pacifico&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Press+Start+2P&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,400;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=Rubik+Mono+One&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Russo+One&family=Sigmar+One&family=Stint+Ultra+Condensed&family=Tangerine&family=Ultra&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  /* ------------------> Background Color <-------------------- */
+
+  --background-dark: rgb(15 23 42/var(--tw-bg-opacity));
+  --background-white: rgb(226 232 240/var(--tw-text-opacity));
+  --backgroud-content: rgb(0, 41, 74)/var(var(--tw-bg-opacity));
+  --background-light-white: rgb(148 163 184/var(--tw-text-opacity));
+
+  /* --------------------> Font Color <------------------------ */
+  --font-black: rgb(15 23 42/var(--tw-bg-opacity));
+  --font-white: rgb(226 232 240/var(--tw-text-opacity));
+  --font-light-white: rgb(148 163 184/var(--tw-text-opacity));
+
+  /* ---------------> Highlight Font Color <------------------- */
+
+  --mark-color: rgb(56 189 248/var(--tw-text-opacity));
+  --mark-color-optional: rgb(125 211 252/var(--tw-text-opacity));
+
+  /* --------------> Button Background Color <----------------- */
+  --btn-bg: rgb(14 165 233/var(--tw-bg-opacity));
+
+  --border-color: #0b385d;
+  --qclr1: #fff;
+  --qclr2: #374142;
+  /* --font-white: #000;
+  --background-dark: #fff;
+  --qclr1: #000;
+  --qclr2: #cbcbcb;
+  --border-color: #d2d2d2; */
+}
+
+.darkTheme {
+  --font-white: #000;
+  --background-dark: #fff;
+  --qclr1: #000;
+  --qclr2: #cbcbcb;
+  --border-color: #d2d2d2;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: var(--font-white);
+  background-color: var(--background-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+.popup {
+  max-width: 600px;
+  max-height: 100%;
+  border: 5px solid var(--border-color);
+  border-radius: 12px;
+  background: rgba(143, 143, 143, 0);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  width: 600px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+}
+
+.serial-no {
+  margin-right: 15px;
+  font-size: 1.7rem;
+  font-weight: 600;
+  font-family: 'Roboto',
+    sans-serif;
+  letter-spacing: 0.1rem;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #b052a4, #4e44a7c0);
+  padding: 4px 8px;
+  color: var(--font-white);
+}
+
+.question {
+  font-size: 1.5rem;
+  color: var(--qclr1);
+  font-weight: 500;
+  letter-spacing: 0.03rem;
+  margin-right: 10px;
+  background: var(--qclr2);
+  padding: 2px 14px;
+  border-radius: 10px;
+}
+
+.settings {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  margin-left: -10px;
+}
+
+.copy-btn {
+  background: #be8500;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 4px 4px #be8500;
+  transition: 0.35s;
+  color: var(--font-white);
+}
+
+.copy-btn:hover {
+  box-shadow: 0 0 10px #be8500, 0 0 30px #be8500, 0 0 50px #be8500;
+}
+
+.show-btn {
+  background: #dcdb14;
+  padding: 8px 7px 8px 5px;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: -1px 1px 4px 4px #dcdb14;
+  transition: 0.35s;
+  color: #000;
+  transition: 0.5s;
+}
+
+.show-btn:hover {
+  box-shadow: 0 0 10px #dcdb14, 0 0 30px #dcdb14, 0 0 50px #dcdb14;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  padding: 0 20px;
+  overflow: hidden;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.peragraph {
+  z-index: 10;
+  color: var(--font-white);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  z-index: 15;
+}
+
+.connections {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.connect a,
+.contact a {
+  text-decoration: none;
+  outline: none;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 20px;
+  border: 2px solid #00b0fe;
+  outline: none;
+  padding: 5px 12px;
+  letter-spacing: 0.05rem;
+  border-radius: 20px;
+  color: #00b0fe;
+  transition: 0.4s;
+}
+
+.connect a {
+  border: 2px solid #01bdab;
+  color: #01bdab;
+}
+
+.contact a:hover {
+  box-shadow: 0 0 10px #00b0fe, 0 0 30px #00b0fe, 0 0 50px #00b0fe;
+  background: #00b0fe;
+  letter-spacing: 0.2rem;
+  color: #000;
+  border: none;
+}
+
+.connect a:hover {
+  box-shadow: 0 0 10px #01bdab, 0 0 30px #01bdab, 0 0 50px #01bdab;
+  background: #01bdab;
+  letter-spacing: 0.2rem;
+  color: #000;
+  border: none;
+}
+
+
+.serial-num {
+  position: absolute;
+  top: -75px;
+  right: 20px;
+  font-size: 7rem;
+  color: var(--border-color);
+  z-index: -1;
+}
+
+.popup.active .content {
+  height: 0;
+  overflow: hidden;
+}
+
+.popup.active .container .heading .question {
+  background: transparent;
+  color: var(--font-white);
+}
+
+.popup.active .container .settings .show-btn {
+  transform: rotate(180deg);
+}

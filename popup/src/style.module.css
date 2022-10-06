@@ -1,0 +1,23 @@
+.PopUpSections {
+  display: grid;
+  margin: 0 10px;
+  column-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 60px;
+}
+
+.theme__btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 20px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb__20 {
+  margin-bottom: 20px;
+}

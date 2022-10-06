@@ -1,15 +1,5 @@
 import React from "react";
 import "./style.css";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   solid,
-//   regular,
-//   brands,
-//   icon,
-// } from "@fortawesome/fontawesome-svg-core/import.macro";
-
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faCoffee } from "@fortawesome/fontawesome-free-solid";
 
 class Popup extends React.Component {
   render() {
@@ -22,7 +12,6 @@ class Popup extends React.Component {
           </div>
           <div className="settings">
             <i className="fas fa-copy copy-btn"></i>
-            {/* <FontAwesomeIcon icon={regular("coffee")} /> */}
             <i className="fas fa-arrows-up-to-line show-btn"></i>
           </div>
         </div>

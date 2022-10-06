@@ -52,7 +52,6 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  overflow: hidden;
   color: var(--font-white);
   background-color: var(--background-dark);
   display: flex;
@@ -60,8 +59,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  margin: 20px 0;
 }
 
+.popup-part {
+  margin-bottom: 20px;
+}
 
 .popup {
   max-width: 600px;
@@ -158,13 +161,20 @@ body {
   word-wrap: break-word;
 }
 
+.textArea,
 .peragraph {
-  z-index: 10;
   color: var(--font-white);
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 0.05rem;
+  background: transparent;
   z-index: 15;
+  resize: none;
+  max-height: 100vh;
+  width: 100%;
+  outline: none;
+  border: none;
+  overflow: hidden;
 }
 
 .connections {
@@ -215,14 +225,19 @@ body {
 
 .serial-num {
   position: absolute;
-  top: -75px;
+  top: -30px;
   right: 20px;
   font-size: 7rem;
   color: var(--border-color);
   z-index: -1;
 }
 
-.popup.active .content {
+
+.show__roate {
+  transform: rotate(180deg);
+}
+
+/* .popup.active .content {
   height: 0;
   overflow: hidden;
 }
@@ -234,4 +249,11 @@ body {
 
 .popup.active .container .settings .show-btn {
   transform: rotate(180deg);
+} */
+
+.border {
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 20px;
+  border: 5px solid var(--border-color);
 }
